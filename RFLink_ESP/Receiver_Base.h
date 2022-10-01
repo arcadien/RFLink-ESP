@@ -94,9 +94,15 @@ class _Receiver_BaseClass {
     // ***********************************************************************
     // deze wordt alleen aangemaakt voor het debuggen
     // ***********************************************************************
-    virtual bool Publish          ( String Topic, String Payload ) {}    
-    virtual bool Publish_Without_ ( String Topic, String Payload ) {}    
-    virtual bool Connected () {}    
+    
+    // FIXME do not return fake value and stay abstract
+    virtual bool Publish          ( String Topic, String Payload ) { return false; }    
+    
+    // FIXME do not return fake value and stay abstract
+    virtual bool Publish_Without_ ( String Topic, String Payload ) { return false; }    
+    
+    // FIXME do not return fake value and stay abstract
+    virtual bool Connected () { return false; }    
 
     // ***********************************************************************
     // even voor SSD1306

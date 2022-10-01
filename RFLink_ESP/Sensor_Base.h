@@ -161,7 +161,7 @@ class _Sensor_BaseClass {
     // deze wordt alleen aangemaakt voor OKE4
     // ***********************************************************************
     //virtual bool Change_ID ( uint8_t ID_Old, uint8_t ID_New ) {}
-    virtual bool Read_SX ( uint8_t ID ) {}
+    virtual bool Read_SX ( uint8_t ID ) {return true;}
 
 };
 #endif
